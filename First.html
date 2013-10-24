@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            
+            <div class="span12">
+                <div class="page-header">
+                    <h1>Introduction to jQuery <small>and Javascript</small></h1>
+                </div>
+                <div class="hero-unit">
+                    <h1>Hi There!</h1>
+                    <p>
+                        This is introduction to jQuery
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-large" id="click">Click
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#click').on('click', function () {
+                alert('Click event raised');
+            });
+        });
+    </script>
+</body>
+</html>
